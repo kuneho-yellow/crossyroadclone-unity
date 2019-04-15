@@ -1,0 +1,185 @@
+{
+  "version": "1.0",
+  "characters": {
+    "character000": {
+      "name": "Chick",
+      "prefabPath": "Chick",
+      "itemID": "chick_ltvg",
+      "mapType": 0,
+      "isInGacha": false,
+      "isBuyable": false,
+      "price": 0.00
+    },
+    "character001": {
+      "name": "chicken",
+      "prefabPath": "chicken",
+      "itemID": "chicken_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character002": {
+      "name": "Egg",
+      "prefabPath": "Egg",
+      "itemID": "egg_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character003": {
+      "name": "Calico Cat",
+      "prefabPath": "Cat_Calico",
+      "itemID": "cat_calico_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character004": {
+      "name": "Socks",
+      "prefabPath": "Cat_Kutsushita",
+      "itemID": "cat_kutsushita_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character005": {
+      "name": "Heterochromia",
+      "prefabPath": "Cat_Heterochromia",
+      "itemID": "cat_heterochromia_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character006": {
+      "name": "Lucky Cat",
+      "prefabPath": "Cat_Maneki",
+      "itemID": "cat_maneki_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character007": {
+      "name": "Brown Puppy",
+      "prefabPath": "Puppy_Brown",
+      "itemID": "puppy_brown_ltvg",
+      "mapType": 1,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character008": {
+      "name": "White Puppy",
+      "prefabPath": "Puppy_White",
+      "itemID": "puppy_white_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character009": {
+      "name": "Black and White Cow",
+      "prefabPath": "Cow_BlackWhite",
+      "itemID": "cow_blackwhite_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character010": {
+      "name": "Brown Cow",
+      "prefabPath": "Cow_Brown",
+      "itemID": "cow_brown_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character011": {
+      "name": "White Rabbit",
+      "prefabPath": "Rabbit_White",
+      "itemID": "rabbit_white_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character012": {
+      "name": "Brown Rabbit",
+      "prefabPath": "Rabbit_Brown",
+      "itemID": "rabbit_brown_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character013": {
+      "name": "Oolong",
+      "prefabPath": "Rabbit_Oolong",
+      "itemID": "rabbit_oolong_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character014": {
+      "name": "Non-poopy Pigeon",
+      "prefabPath": "Pigeon",
+      "itemID": "pigeon_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character015": {
+      "name": "Flea",
+      "prefabPath": "Flea",
+      "itemID": "flea_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character016": {
+      "name": "Giftee",
+      "prefabPath": "Giftee",
+      "itemID": "giftee_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character017": {
+      "name": "Disguise",
+      "prefabPath": "Tree",
+      "itemID": "tree_ltvg",
+      "mapType": 0,
+      "isInGacha": true,
+      "isBuyable": true,
+      "price": 0.99
+    },
+    "character018": {
+      "name": "Ron",
+      "prefabPath": "Ron",
+      "itemID": "ron_ltvg",
+      "mapType": 0,
+      "isInGacha": false,
+      "isBuyable": false,
+      "price": 0.0
+    },
+    "character019": {
+      "name": "Lori",
+      "prefabPath": "Lori",
+      "itemID": "lori_ltvg",
+      "mapType": 0,
+      "isInGacha": false,
+      "isBuyable": false,
+      "price": 0.0
+    }
+  }
+}

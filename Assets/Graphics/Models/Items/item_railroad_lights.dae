@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.4.44</authoring_tool>
+</contributor>
+<created>2015-09-21T05:00:47</created>
+<modified>2015-09-21T05:00:47</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Y_UP</up_axis>
+</asset>
+<library_images>
+<image id="item_railroad_lights_texture0-image" name="item_railroad_lights_texture0-image">
+<init_from>item_railroad_lights_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="item_railroad_lights_texture0-surface">
+<surface type="2D">
+<init_from>item_railroad_lights_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="item_railroad_lights_texture0-sampler">
+<sampler2D>
+<source>item_railroad_lights_texture0-surface</source>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="item_railroad_lights_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-positions">
+<float_array count="72" id="Plane-tex-mesh-positions-array">2 2 3 2 0 -1 2 0 3 2 2 -1 -6 2 3 -6 0 -1 -6 0 3 -6 2 -1 -10 8 3 -10 2 -3 -10 2 3 -10 8 -3 -2 2 3 -2 0 -1 -2 0 3 -2 2 -1 6 2 3 6 0 -1 6 0 3 6 2 -1 10 8 3 10 2 -3 10 2 3 10 8 -3</float_array>
+<technique_common>
+<accessor count="24" source="#Plane-tex-mesh-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-uvs">
+<float_array count="82" id="Plane-tex-mesh-uvs-array">0.66690236 0.20014141 0.8332155 0.39971715 0.8332155 0.20014141 0.6667845 0.20028284 0.6667845 0.39985856 0.83309764 0.39985856 0.16690236 0.6001414 0.33321548 0.7997171 0.33321548 0.6001414 0.16678452 0.60028285 0.16678452 0.79985857 0.33309764 0.79985857 0.16676667 0.6002 0.16676667 0.79984 0.33313334 0.73329335 0.33308333 0.6002 0.25 0.6002 0.16691667 0.7996 0.33317834 0.7998837 0.2333527 0.6002325 0.16680229 0.7998837 0.22227493 0.60018975 0.16687748 0.60018975 0.3330698 0.7996205 0.16691667 0.6002 0.33308333 0.7996 0.33323333 0.6002 0.16686666 0.73329335 0.33323333 0.79984 0.33309764 0.6001414 0.16678452 0.6001414 0.16678452 0.7997171 0.33366665 0.7996 0.6663333 0.5002 0.5 0.5002 0.33349356 0.7998918 0.49997997 0.5002163 0.6109709 0.7998918 0.5000527 0.5001897 0.41687748 0.5001897 0.6664031 0.7996205</float_array>
+<technique_common>
+<accessor count="41" source="#Plane-tex-mesh-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-positions"/>
+</vertices>
+<polylist count="44" material="lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 4 0 5 1 6 2 4 3 7 4 5 5 8 6 9 7 10 8 8 9 11 10 9 11 13 1 12 0 14 2 15 4 12 3 13 5 17 1 16 0 18 2 19 4 16 3 17 5 21 7 20 6 22 8 23 10 20 9 21 11 19 7 22 6 16 8 21 13 22 12 19 14 19 16 3 15 21 17 3 19 9 18 21 20 3 22 15 21 9 23 15 24 7 16 9 25 3 10 0 9 15 11 7 27 10 26 9 28 15 7 0 6 12 8 4 30 10 29 7 31 1 1 18 0 2 2 17 4 18 3 1 5 5 1 14 0 6 2 13 4 14 3 5 5 20 6 11 7 8 8 20 9 23 10 11 11 16 29 22 30 20 31 20 32 0 33 16 34 18 3 16 4 0 5 8 35 0 36 20 37 18 0 0 1 2 2 12 38 0 39 8 40 4 34 12 33 8 32 4 6 8 7 10 8 14 3 12 4 4 5 14 0 4 1 6 2 11 7 21 6 9 8 23 10 21 9 11 11 3 1 17 0 1 2 19 4 17 3 3 5 7 1 13 0 5 2 15 4 13 3 7 5</p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="item_railroad_lights" name="item_railroad_lights" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry url="#Plane-tex-mesh">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>

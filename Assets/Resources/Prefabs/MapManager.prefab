@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &116144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 435384}
+  - 114: {fileID: 11460594}
+  - 114: {fileID: 11436776}
+  - 114: {fileID: 11488740}
+  m_Layer: 0
+  m_Name: MapManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435384
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11436776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916d864f11fc22c4f83691a396acb87c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_mapSkinFilePath: Prefabs/Map/
+  m_laneFilePath: /Lanes/
+  m_itemFilePath: /Items/
+  m_vehicleFilePath: /Vehicles/
+  m_coinFilePath: Prefabs/Items/Coin
+  m_eagleFilePath: Prefabs/Items/Eagle
+  m_waterSplashPath: Prefabs/Items/WaterSplash
+--- !u!114 &11460594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8878d7c6b71b764182024830eb2000e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_tileSize: 15
+  m_activeLaneCount: 20
+  m_activeTileCount: 9
+  m_edgeTileCount: 7
+  m_startRowCoord: -6
+  m_characterStartCoord: {x: 0, y: 0}
+  m_minRowsFromCharacter: 13
+  m_mapResources: {fileID: 11436776}
+  m_mapAssetPool: {fileID: 11488740}
+  m_mapType: 0
+  m_cameraController: {fileID: 0}
+  m_maxBackwardSteps: 3
+  m_maxIdleTime: 6
+  m_riverNormalVolume: .100000001
+  m_riverGameOverVolume: 1
+  m_riverVolumeChangeTime: .800000012
+  m_riverGameOverTime: 4
+  m_grassLaneSetProb:
+  - {x: 0, y: .899999976}
+  - {x: 50, y: .75}
+  - {x: 100, y: .5}
+  - {x: 150, y: .25}
+  - {x: 200, y: 0}
+--- !u!114 &11488740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae3e10c9b34c844398d883c68b93080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_tallTreeEdgeProb: .600000024
+  m_mediumTreeEdgeProb: .200000003
+  m_shortTreeEdgeProb: .100000001
+  m_treeTrunkEdgeProb: .0500000007
+  m_rocksEdgeProb: .0500000007
+  m_tallTreeObstacleProb: .100000001
+  m_mediumTreeObstacleProb: .300000012
+  m_shortTreeObstacleProb: .300000012
+  m_treeTrunkObstacleProb: .100000001
+  m_rockObstacleProb: .300000012
+  m_vehicleMaxCount: 50
+  m_lilyPadMaxCountPerLane: 3
+  m_coinCountMax: 30
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 116144}
+  m_IsPrefabParent: 1

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.4.44</authoring_tool>
+</contributor>
+<created>2015-09-20T03:19:04</created>
+<modified>2015-09-20T03:19:04</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Y_UP</up_axis>
+</asset>
+<library_images>
+<image id="lane_road_edge_active_texture0-image" name="lane_road_edge_active_texture0-image">
+<init_from>lane_road_edge_active_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="lane_road_edge_active_texture0-surface">
+<surface type="2D">
+<init_from>lane_road_edge_active_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="lane_road_edge_active_texture0-sampler">
+<sampler2D>
+<source>lane_road_edge_active_texture0-surface</source>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="lane_road_edge_active_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-positions">
+<float_array count="24" id="Plane-tex-mesh-positions-array">-135 6 15 -135 0 -15 -135 0 15 -135 6 -15 135 6 15 135 0 -15 135 0 15 135 6 -15</float_array>
+<technique_common>
+<accessor count="8" source="#Plane-tex-mesh-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-uvs">
+<float_array count="42" id="Plane-tex-mesh-uvs-array">0.9165488 0.3749116 0.83339226 0.2501768 0.83339226 0.3749116 0.45840114 0.37485468 0.45840114 0.24114408 0.5831977 0.24114408 0.91660774 0.3748232 0.91660774 0.2500884 0.8334512 0.2500884 0.08346325 0.3750783 0.1666017 0.50877196 0.1666017 0.3750783 0.16674587 0.37507778 0.16674587 0.5088897 0.91650826 0.5088897 0.9165152 0.3749479 0.16674243 0.18760416 0.16674243 0.3749479 0.9165909 0.8748958 0.9165909 0.6875521 0.16681817 0.6875521</float_array>
+<technique_common>
+<accessor count="21" source="#Plane-tex-mesh-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-positions"/>
+</vertices>
+<polylist count="12" material="lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 5 1 4 0 6 2 7 4 4 3 5 5 1 1 6 0 2 2 5 7 6 6 1 8 4 9 3 10 0 11 4 12 7 13 3 14 6 0 0 1 2 2 6 6 4 7 0 8 3 16 5 15 1 17 7 19 5 18 3 20</p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="lane_road_edge_active" name="lane_road_edge_active" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry url="#Plane-tex-mesh">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>
